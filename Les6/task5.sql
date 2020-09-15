@@ -7,4 +7,3 @@ WHERE lp.profile_id IN
 	from users as us
 	ORDER BY TIMESTAMPDIFF(year, us.birthday, NOW()), u.id
 	limit 10) as tbl_name) GROUP BY lp.profile_id;
-	
